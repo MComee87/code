@@ -1,0 +1,94 @@
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #000;
+}
+
+.main {
+	font-size: 1.25em;
+}
+
+.top-box {
+	border: 1px solid #000;
+	padding: 0px;
+}
+
+.title {
+	font-family: 'Audiowide', cursive;
+	text-align: center;
+	font-size: 4em;
+	text-shadow: 1px 1px 0px #F00;
+}
+
+.slogan {
+	background-color: #000;
+	color: #0F0;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0px; 
+	font-family: 'VT323', monospace;
+}
+
+.text-blue {
+	color: #729FCF;
+}
+
+.text-yellow {
+	color: #FCFF4F;
+}
+
+.text-red {
+	color: #F00;
+}
+
+.text-green {
+	color: #0F0;
+}
+
+.text-purple {
+	color: #BF00FE;
+}
+
+.bg-black {
+	background-color: #333;
+	color: #FFF;
+	min-width: 100%;
+}
+
+.bg-grey {
+	background-color: #777;
+	color: #FFF;
+}
+
+.text-indent-1{
+	text-indent: 10px;
+}
+
+.text-indent-2{
+	text-indent: 20px;
+}
+
+.text-indent-3{
+	text-indent: 30px;
+}
+
+.item {
+	background-color: #FFF;
+	margin: 1px;
+}
+
+.item:hover {
+	background-color: #FFF;
+	box-shadow: 2px 2px 7px 2px #333;
+	margin-left: 10px;
+}
+
+.item p:after{ 
+    content: " -Read more… ";
+    color:#f00;
+}

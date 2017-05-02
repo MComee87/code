@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Slingers</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|VT323" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 top-box">
+        <a href="index.html">
+            <h1 class="title">Code Slingers</h1>
+            <p class="slogan"><span class="text-yellow">Code_Slinger</span>@<span class="text-yellow">CodeSlingers.com</span>:<span class="text-blue">~</span>$ Welcome to Code Slingers... Code examples and walk throughs for the Full Stack and beyond!!!</p>
+        </a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <h2>How to create a pop up link element with CSS.</h2>
+            <br>
+            
+            <p class="main"> Adding those subtile details to your website can be a tricky task. Try this sipmle CSS code to turn your web page content into pop up link elements. First things first, inside the body of your html, you will need to put a "div" tag around the content you wish to make your pop up link element. Maybe around an image and some text. You will also need to create a class for your div tag, to keep things simple, I will use the class "item" for my example.</p>
+
+            <br>
+
+            <div class="bg-black">&lt;<span class="text-red">body</span>&gt;<br>&lt;<span class="text-red">div</span><span class="text-green"> class</span>=<span class="text-yellow">"item"</span>&gt;<br><br> &lt;<span class="text-red">img</span><span class="text-green"> src</span>=<span class="text-yellow">""</span>&gt;<br> &lt;<span class="text-red">p</span>&gt;Some text.&lt;/<span class="text-red">p</span>&gt;<br><br>&lt;/<span class="text-red">div</span>&gt;<br>&lt;/<span class="text-red">body</span>&gt;</div>
+
+            <br>
+            
+            <p class="main">Now that we have a "div" tag set up around the image and text we will be using, we need to start styling the content with CSS. This can be acomplished in our css file by applying the :hover CSS pseudo-class to your "item" class we created inside our "div".</p>
+
+            <br>
+
+            <div class="bg-black"><span class="text-green">.item</span>:hover {<br><br> }</div>
+
+            <br>
+
+            <p class="main">There are three main CSS properties I will be using to create this pop up link element. The first of which is the background-color property. Although i will be  leaving the background in the example the same color as the page background, slightly off setting the background color can help to visualy emphasize the difference between the page and your pop up element. This next property, however, is a must to set. It is the CSS box-shadow property. For the box-shadow property you can set the x off-set, y off-set, blur-radius, spread-radius and color respectively. Finaly, to give your pop up element that little extra to bring it all together, you will want to set the CSS margin-left property to help really bring your element up off of the page.</p>
+
+            <br>
+
+            <div class="bg-black"><span class="text-green">.item</span>:hover {<br><span class="text-blue">background-color</span>:<span class="text-purple"> #fff</span>;<br><span class="text-blue">box-shadow</span>:<span class="text-purple"> 2</span><span class="text-red">px</span><span class="text-purple"> 2</span><span class="text-red">px</span><span class="text-purple"> 7</span><span class="text-red">px</span><span class="text-purple"> 2</span><span class="text-red">px</span><span class="text-purple"> #333</span>;<br><span class="text-blue">margin-left</span>:<span class="text-purple"> 10</span><span class="text-red">px</span>:<br> }</div>
+
+            <br>
+
+            <p class="main">You should now have something that resembles this...</p>
+
+            <br>
+
+            <div class="row item">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="test.png">
+                </div>
+                <div class="col-md-8">
+                    <p>Some text.</p>
+                </div>
+            </div>
+
+            <br>
+
+            <p class="main">But there is still something missing. We have not turned this pop up element into a link yet. This is a simple step. Back in your html add an anchor tag just inside of your opening and closing "div" with the "item" class.</p>
+
+            <br>
+
+            <div class="bg-black">&lt;<span class="text-red">body</span>&gt;<br>&lt;<span class="text-red">div</span><span class="text-green"> class</span>=<span class="text-yellow">"item"</span>&gt;<br>&lt;<span class="text-red">a</span><span class="text-green"> href</span>=<span class="text-yellow">""</span>&gt;<br><br> &lt;<span class="text-red">img</span><span class="text-green"> src</span>=<span class="text-yellow">""</span>&gt;<br> &lt;<span class="text-red">p</span>&gt;Some text.&lt;/<span class="text-red">p</span>&gt;<br><br>&lt;/<span class="text-red">a</span>&gt;<br>&lt;/<span class="text-red">div</span>&gt;<br>&lt;/<span class="text-red">body</span>&gt;</div>
+
+            <br>
+
+            <p class="main">And there it is, your completed pop up link item.</p>
+
+        </div>
+        <div class="col-md-4">
+            <div class="row item">
+            <a href="article.html">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="test.png">
+                </div>
+                <br>
+                <div class="col-md-12">
+                    <p>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br></p>
+                </div>
+            </a>
+            </div>
+            <br>
+            <div class="row item">
+            <a href="article.html">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="test.png">
+                </div>
+                <br>
+                <div class="col-md-12">
+                    <p>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br></p>
+                </div>
+            </a>
+            </div>
+            <br>
+            <div class="row item">
+            <a href="article.html">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="test.png">
+                </div>
+                <br>
+                <div class="col-md-12">
+                    <p>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br></p>
+                </div>
+            </a>
+            </div>
+            <br>
+            <div class="row item">
+            <a href="article.html">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="test.png">
+                </div>
+                <br>
+                <div class="col-md-12">
+                    <p>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br>This is only a test...This is only a test...This is only a test<br></p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+  </div>
+  </body>
+</html>
